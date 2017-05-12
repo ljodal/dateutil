@@ -57,7 +57,7 @@ class _timelex(object):
             instream = StringIO(instream)
 
         if getattr(instream, 'read', None) is None:
-            raise TypeError('Parser must be a string or character stream, not '
+            raise TypeError('Value must be a string or character stream, not '
                             '{itype}'.format(itype=instream.__class__.__name__))
 
         self.instream = instream
